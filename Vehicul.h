@@ -25,12 +25,6 @@ public:
         this->CaiPutere = CaiPutere;
     }
 
-    Vehicul()
-    {
-        this->culoare = "";
-        this->reparata = "Inexistenta";
-    }
-
     Vehicul(Vehicul& aux)
     {
         this->culoare = aux.culoare;
@@ -38,6 +32,21 @@ public:
         this->anFabricatie = aux.anFabricatie;
         this->CaiPutere = aux.CaiPutere;
         this->nrInmatriculare = aux.nrInmatriculare;
+    }
+
+    Vehicul()
+    {
+        this->culoare = "";
+        this->reparata = "Inexistenta";
+    }
+
+    Vehicul(Vehicul* aux)
+    {
+        this->culoare = aux->culoare;
+        this->reparata = aux->reparata;
+        this->anFabricatie = aux->anFabricatie;
+        this->CaiPutere = aux->CaiPutere;
+        this->nrInmatriculare = aux->nrInmatriculare;
     }
 
     friend istream& operator>>(istream& in, Vehicul& v)

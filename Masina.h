@@ -7,7 +7,6 @@
 
 #include "Vehicul.h"
 #include <iostream>
-#include "VehiculBuilder.h"
 using namespace std;
 
 class VehiculBuilder{};
@@ -246,6 +245,5 @@ public:
 #pragma endregion
 };
 
-class superCar
 
 #endif //PROIECT2POO_MASINA_H

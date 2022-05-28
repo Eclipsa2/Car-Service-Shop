@@ -1,12 +1,12 @@
 //
-// Created by Andrei on 4/18/2022.
+// Created by Andrei on 5/28/2022.
 //
 
-#ifndef PROIECT2POO_MOTOCICLETA_H
-#define PROIECT2POO_MOTOCICLETA_H
+#ifndef MAIN_CPP_MOTOCICLETA_H
+#define MAIN_CPP_MOTOCICLETA_H
 
-#include "Vehicul.h"
 #include <iostream>
+#include "Vehicul.h"
 
 using namespace std;
 
@@ -43,6 +43,18 @@ public:
         this->masaTotala = masaTotala;
         this->distantaRoti = distantaRoti;
         this->tipTransmisie = tipTransmisie;
+    }
+
+    Motocicleta(Motocicleta* aux)
+    {
+        this->marca = aux->marca;
+        this->model = aux->model;
+        for (int i = 0; i <= 5; i++)
+            this->probleme[i] = aux->probleme[i];
+        this->manopera = aux->manopera;
+        this->distantaRoti = aux->distantaRoti;
+        this->masaTotala = aux->masaTotala;
+        this->tipTransmisie = aux->tipTransmisie;
     }
 
     Motocicleta() : Vehicul()
@@ -269,4 +281,4 @@ public:
     }
 };
 
-#endif //PROIECT2POO_MOTOCICLETA_H
+#endif //MAIN_CPP_MOTOCICLETA_H

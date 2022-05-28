@@ -3,4 +3,4 @@ project(Proiect2POO)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Proiect2POO main.cpp Vehicul.h Masina.h Motocicleta.h Angajat.h Singleton.h VehiculBuilder.h ValoareVehicul.h)
+add_executable(Proiect2POO main.cpp Vehicul.h Masina.h Motocicleta.h Angajat.h Singleton.h ValoareVehicul.h Motocicleta.h)
