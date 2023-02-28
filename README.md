@@ -1,7 +1,6 @@
-Am folosit urmatoarele design pattern-uri:
-  1. Singleton pentru citirea si scrierea in fisierele proiectului - in main.cpp
-  2. Decorator pattern in cazul in care masina/motocicleta este unul/una de tip exotic(am adaugat campul valoare pentru vehiculele cu pret mare) - in fisierul ValoareVehicul.h
-  3. Prototype pattern in cazul in care masina/motocicleta este a politiei - in main.cpp
-  4. Factory pattern cu ajutorul caruia imi creez o masina/motocicleta noua - in main.cpp
- 
-Functia template se afla in Vehicul.h si compara doua vehicule in functie de puterea fiecaruia.
+In this OOP app I have used the following design patterns:
+  1. Singleton for reading and writing in the project files - in main.cpp
+  2. Decorator pattern when there is an exotic car/motorcycle - in ValoareVehicul.h file
+  3. Prototype pattern if the car/motorcycle is from the police - in main.cpp
+  4. Factory pattern - I use it to create new cars and new motorcycles - in main.cpp
+  
